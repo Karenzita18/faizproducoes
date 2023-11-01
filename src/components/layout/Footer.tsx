@@ -16,7 +16,7 @@ import { Link as Scroll } from "react-scroll";
 const Footer = () => {
   const data = new Date(Date.now());
   return (
-    <footer className={`bg-gradient-to-b from-brand-100 to-brand-150`}>
+    <footer className={`bg-faiz-100`}>
       <div className="-translate-y-1/2 flex place-content-end overflow-x-hidden relative z-10">
         <div className=""></div>
       </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-brand-200 rounded-full text-white hover:-translate-y-1 transition duration-500"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
                   >
                     <FaFacebookF />
                   </a>
@@ -47,7 +47,7 @@ const Footer = () => {
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-brand-200 rounded-full text-white hover:-translate-y-1 transition duration-500"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
                   >
                     <FaLinkedinIn />
                   </a>
@@ -55,7 +55,7 @@ const Footer = () => {
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-brand-200 rounded-full text-white hover:-translate-y-1 transition duration-500"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
                   >
                     <FaInstagram />
                   </a>
@@ -63,7 +63,7 @@ const Footer = () => {
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-brand-200 rounded-full text-white hover:-translate-y-1 transition duration-500"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
                   >
                     <FaWhatsapp />
                   </a>
@@ -167,14 +167,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-brand-100">
+      <div className="bg-faiz-200">
         <div className="container flex flex-wrap place-content-center gap-1 py-3">
           <div>
-            <p className="text-white text-sm">
+            <p className="text-black text-sm">
               © {data.getFullYear()} Todos os direitos reservados.
             </p>
           </div>
-          <div className="text-white flex gap-2 text-sm">
+          <div className="text-black flex gap-2 text-sm">
             Desenvolvido por
             <a
               href="/"
