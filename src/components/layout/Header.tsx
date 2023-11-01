@@ -21,10 +21,11 @@ import navigation from "./navigation";
 
 declare const window: any;
 
-const cursos = [
-  { name: "Publicidade e Propaganda", href: "/publicidade-e-propaganda" },
-  { name: "AudioVisual", href: "/audiovisual" },
-  { name: "Design gráfico", href: "/design-grafico" },
+const servicos = [
+  { name: "Produção", href: "/producao" },
+  { name: "Publicidade", href: "/publicidade" },
+  { name: "Projetos", href: "/projetos" },
+  { name: "Assessoria", href: "/assessoria" },
 ];
 
 export default function Header() {
@@ -34,9 +35,9 @@ export default function Header() {
   const data = {
     logoAlt: "Maximus",
     redeSocial: {
-      facebook: "/",
-      linkedIn: "/",
-      instagram: "/",
+      facebook: "https://www.facebook.com/faizproducoes",
+      linkedIn: "https://www.linkedin.com/company/faizproducoes/",
+      instagram: "https://www.instagram.com/faizproducoes/",
       whatsapp:
         "/",
     },
@@ -60,7 +61,7 @@ export default function Header() {
   return (
     <>
       <header>
-        <div className="bg-brand-100 md:px-5 z-20 font-light border-b border-white/20 relative text-white ">
+        <div className="bg-faiz-100 md:px-5 z-20 font-light border-b border-white/20 relative text-white ">
           <div className="max-w-7xl mx-auto flex place-content-between">
             <div className="flex place-items-center gap-x-5">
               <a
@@ -70,7 +71,7 @@ export default function Header() {
                 <span className="inline-block text-lg -mb-1 mx-2">
                   <FaRegEnvelope></FaRegEnvelope>
                 </span>
-                contato@audiovisual.com.br
+                contato@faizproducoes.com
               </a>
             </div>
 
@@ -130,29 +131,29 @@ export default function Header() {
                 <div className="hidden lg:block">
                 <div className=" flex items-center space-x-4 font-medium">
                     {navigation.map((item) =>
-                      item.name == "Cursos" ? (
+                      item.name == "Serviços" ? (
                         <>
                           <div key={item.href} className="relative text-right">
                             <div className="group relative">
                               <Link
                                 key={item.name}
                                 href={`${item.href}`}
-                                className="cursor-pointer tracking-wider px-3 py-7 font-medium group-hover:text-brand-200 text-brand-100 transition duration-500 relative"
+                                className="cursor-pointer tracking-wider px-3 py-7 font-medium group-hover:text-faiz-300 text-faiz-100 transition duration-500 relative"
                               >
                                 {item.name}
                                 <span className="inline-block -mb-1">
                                   <FaAngleDown
-                                    className="ml-2 -mr-1 h-5 w-5 text-sm opacity-75 text-brand-100 group-hover:text-brand-200 transition duration-500"
+                                    className="ml-2 -mr-1 h-5 w-5 text-sm opacity-75 text-faiz-100 group-hover:text-faiz-300 transition duration-500"
                                     aria-hidden="true"
                                   />
                                 </span>
                               </Link>
                               <div className="group-hover:absolute hidden group-hover:block bg-white shadow-md p-[2px] w-48 top-12">
-                                {cursos.map((item, i) => (
+                                {servicos.map((item, i) => (
                                   <div key={i}>
                                     <Link
-                                      href={`/cursos/${item.href}`}
-                                      className="hover:bg-brand-100 hover:text-white text-brand-100 group text-start flex w-full items-center rounded-md px-2 py-2 text-sm"
+                                      href={`/servicos/${item.href}`}
+                                      className="hover:bg-faiz-300 hover:text-white text-faiz-100 group text-start flex w-full items-center rounded-md px-2 py-2 text-sm"
                                     >
                                       {item.name}
                                     </Link>
@@ -166,7 +167,7 @@ export default function Header() {
                         <Link
                           key={item.name}
                           href={`${item.href}`}
-                          className="cursor-pointer tracking-wider px-3 py-7 font-medium hover:text-brand-200 text-brand-100"
+                          className="cursor-pointer tracking-wider px-3 py-7 font-medium hover:text-faiz-300 text-faiz-100"
                         >
                           {item.name}
                         </Link>
@@ -179,7 +180,7 @@ export default function Header() {
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"
-                  className=" inline-flex items-center justify-center p-2 rounded-md text-brand-100 bg-brand-400 outline-none shadow-md"
+                  className=" inline-flex items-center justify-center p-2 rounded-md text-faiz-100 bg-faiz-200 outline-none shadow-md"
                   aria-controls="mobile-menu"
                   aria-expanded="false"
                 >
@@ -239,12 +240,12 @@ export default function Header() {
                 >
                   <div>
                     {navigation.map((item) =>
-                      item.name == "Cursos" ? (
+                      item.name == "Serviços" ? (
                         <div key={item.href} className="relative text-right">
                           <Menu as="div" className="">
-                            <Menu.Button className="cursor-pointer text-brand-100 block px-3 py-2 rounded-md text-base font-medium tracking-wider">
-                              Cursos
-                              <span className="inline-block -mb-1 text-brand-100/70">
+                            <Menu.Button className="cursor-pointer text-faiz-100 block px-3 py-2 rounded-md text-base font-medium tracking-wider">
+                              Serviços
+                              <span className="inline-block -mb-1 text-faiz-100">
                                 <FaAngleDown />
                               </span>
                             </Menu.Button>
@@ -259,16 +260,16 @@ export default function Header() {
                             >
                               <Menu.Items className="ml-5 mb-2 origin-top-right divide-y ">
                                 <div className="px-1 pb-1 ">
-                                  {cursos.map((item, i) => (
+                                  {servicos.map((item, i) => (
                                     <Menu.Item key={i}>
                                       {({ active }) => (
                                         <Link
-                                          href={`/cursos/${item.href}`}
+                                          href={`/servicos/${item.href}`}
                                           onClick={() => setIsOpen(false)}
                                           className={`${
                                             active
-                                              ? "bg-brand-100 text-white"
-                                              : "text-brand-100"
+                                              ? "bg-faiz-100 text-white"
+                                              : "text-faiz-100"
                                           } group text-start flex w-full items-center rounded-md px-2 py-2 text-sm`}
                                         >
                                           {item.name}
@@ -286,7 +287,7 @@ export default function Header() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsOpen(false)}
-                          className="cursor-pointer text-brand-100 block px-3 py-2 rounded-md text-base font-medium tracking-wider"
+                          className="cursor-pointer text-faiz-100 block px-3 py-2 rounded-md text-base font-medium tracking-wider"
                         >
                           {item.name}
                         </Link>
