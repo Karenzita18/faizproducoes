@@ -24,6 +24,8 @@ const FeedCeo = () => {
                   src="/img/quem-somos2.png"
                   alt="Foto PP"
                   className="rounded-md shadow-lg"
+                  width={600}
+                  height={600}
                 />
               </div>
             </div>
