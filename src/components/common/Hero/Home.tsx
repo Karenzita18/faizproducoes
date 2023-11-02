@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const HeroHome = () => {
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-20 grid-cols-2">
       <div className="flex absolute -bottom-5 left-0 w-full z-10 h-12">
         <div className=""></div>
       </div>

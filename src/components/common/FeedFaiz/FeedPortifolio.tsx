@@ -1,83 +1,92 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useInView } from "react-intersection-observer";
 
-const FeedAbout = () => {
-  const { ref, inView, entry } = useInView();
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
-  return (
-    <section
-      ref={ref}
-      id="quem-somos"
-      className="bg-brand-100/5 relative overflow-hidden"
-    >
-      <div className="row relative">
-        <div className="container">
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="flex flex-col justify-center">
-              <div
-                className={`"mx-auto max-w-2xl ${
-                  inView && "animate-fade-right animate-duration-700"
-                }`}
-              >
-                <Image
-                  src="/img/maximus-gestao.png"
-                  width={500}
-                  height={500}
-                  alt="Sobre a Maximus"
-                  className="rounded-md shadow-lg"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col justify-center">
-              <p
-                className={`sectionSubTitle ${
-                  inView && "animate-fade-down animate-delay-300"
-                }`}
-              >
-                Quem Somos
-              </p>
-              <h2 className={`sectionTitle ${inView && "animate-fade-down"}`}>
-                Nossa História
-              </h2>
-              <div className="mt-3 flex flex-col gap-y-3 text-zinc-500 text-justify font-medium text-lg">
-                <p className={inView ? "animate-fade-left" : ""}>
-                 O Maximus Gestão de Acesso é uma solução aderente aos diferentes segmentos 
-                 empresariais, nacionais e internacionais, de fácil implantação
-                 e usabilidade que foi desenvolvido pelo Centro de Tecnologia
-                 de Campinas - CTC.
-                </p>
-                <p
-                  className={
-                    inView ? "animate-fade-left animate-delay-100" : ""
-                  }
-                >
-                  Utilizado para gestão de acesso e segurança, gerência
-                  de dispositivos on-line, coleta de informações em tempo real,
-                  navegação nos mais diferentes browsers e dispositivos móveis
-                  como tablets e smartphones.
-                </p>
-                <div
-                  className={`hover:-translate-y-2 transition duration-500 mt-5 ${
-                    inView &&
-                    "animate-fade-up animate-delay-200 animate-duration-500"
-                  }`}
-                >
-                  <Link
-                    href="/quem-somos"
-                    className="border border-brand-100 text-brand-100 px-5 py-2 font-semibold hover:bg-brand-100 rounded-full hover:text-white transition duration-500"
-                  >
-                    Saiba Mais
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+const FeedPortifolio = () => {
+	return (
+		<div>
+			<section className="pt-32 text-white relative bg-faiz-200">
+				<div className="row z-10 relative">
+					<div className="container grid md:grid-cols-2 gap-10 items-center">
+            <div className="col-span-1">
+            <Swiper
+						slidesPerView={1}
+						loop={true}
+						autoplay={true}
+						pagination={{
+							clickable: true,
+						}}
+						navigation={false}
+						modules={[Navigation]}
+						breakpoints={{
+							640: {
+								slidesPerView: 1,
+							},
+							768: {
+								slidesPerView: 1,
+							},
+							1024: {
+								slidesPerView: 1,
+							},
+						}}
+						className=""
+					>
+						<SwiperSlide className="relative m-auto">
+							<div className="flex my-auto mx-5 items-center justify-center h-full">
+								<img
+									src="/img/quem-somos3.png"
+									alt=""
+									title=""
+								/>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="relative m-auto">
+							<div className="flex my-auto mx-5 items-center justify-center h-full">
+								<img
+									src="/img/quem-somos3.png"
+									alt=""
+									title=""
+								/>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="relative m-auto">
+							<div className="w-3/4 m-auto flex mx-5 items-center justify-center h-full">
+								<img
+									src="/img/quem-somos3.png"
+									alt="/"
+									title="/"
+								/>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="relative m-auto">
+							<div className="flex my-auto mx-5 items-center justify-center h-full">
+								<img
+									src="/img/quem-somos3.png"
+									alt=""
+									title=""
+								/>
+							</div>
+						</SwiperSlide>
+					</Swiper>
+				</div>
+				<div className="animate-fadeInLeft animate-delay-200">
+					<h1 className="text-2xl md:text-3xl mb-4 font-medium text-faiz-100">
+						Conheça o nosso portifólio
+					</h1>
+					<p className="text-xl md:text-xl mb-4 font-medium text-faiz-100"> 
+						Solucionamos problemas
+					</p>
+				</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	);
 };
 
-export default FeedAbout;
+export default FeedPortifolio;
+

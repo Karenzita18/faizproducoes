@@ -9,7 +9,7 @@ export default function Home() {
       <FeedAbout/>
       <FeedClientes/>
       <FeedServices/>
-     {/*<FeedPortifolio/>*/}
+     <FeedPortifolio/>
     </main>
   );
 }
