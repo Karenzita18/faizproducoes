@@ -1,11 +1,11 @@
 import Header from "@/components/layout/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Mulish } from "next/font/google";
+import { Exo } from "next/font/google";
 import Script from "next/script";
 import Footer from "@/components/layout/Footer";
 
-const mulish = Mulish({
+const exo = Exo({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -82,7 +82,7 @@ export default function RootLayout({
         `}
         </Script>
       </head>
-      <body className={mulish.className}>
+      <body className={exo.className}>
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWN2PP5T"
