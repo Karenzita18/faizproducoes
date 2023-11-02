@@ -12,7 +12,7 @@ export default function Page() {
 
 export const metadata = {
   title:
-    "Contato| Faiz Produções",
+    "Contato | Faiz Produções",
   description: "",
   keywords: [
     "Faiz produções",
