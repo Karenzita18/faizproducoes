@@ -20,8 +20,8 @@ const FeedCeo = () => {
                   inView && "animate-fade-right animate-duration-700"
                 }`}
               >
-                <img
-                  src="https://via.placeholder.com/700x700"
+                <Image
+                  src="/img/quem-somos2.png"
                   alt="Foto PP"
                   className="rounded-md shadow-lg"
                 />
@@ -33,7 +33,7 @@ const FeedCeo = () => {
               </h2>
               <div className="mt-3 flex flex-col gap-y-3 text-zinc-500 text-justify font-medium text-lg">
                 <p className={inView ? "animate-fade-left text-faiz-100" : ""}>
-                    "Desde que me entendo por gente, me interesso por tecnologia. Não apenas entender como ela acontece, mas interagir com equipamentos e recursos, saber como são feitos os processos e o que fazer para que todos tenham acesso a isso. Foi isso que sempre busquei no que tange a esse tema.
+                    Desde que me entendo por gente, me interesso por tecnologia. Não apenas entender como ela acontece, mas interagir com equipamentos e recursos, saber como são feitos os processos e o que fazer para que todos tenham acesso a isso. Foi isso que sempre busquei no que tange a esse tema.
                 </p>
                 <p
                   className={
@@ -61,7 +61,7 @@ const FeedCeo = () => {
                     inView ? "animate-fade-left animate-delay-100 text-faiz-100" : ""
                   }
                 >
-                    Além de aprender, poder também ensinar sobre essas questões é um privilégio que nos motiva a continuar transformando o planeta através da tecnologia".
+                    Além de aprender, poder também ensinar sobre essas questões é um privilégio que nos motiva a continuar transformando o planeta através da tecnologia.
                 </p>
               </div>
             </div>
