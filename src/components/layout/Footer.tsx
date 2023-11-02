@@ -36,7 +36,7 @@ const Footer = () => {
                 </p>
                 <div className="flex gap-x-3 mt-5 md:place-content-center">
                   <a
-                    href="/"
+                    href="https://www.facebook.com/faizproducoes"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
@@ -44,7 +44,7 @@ const Footer = () => {
                     <FaFacebookF />
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/faizproducoes/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
@@ -52,20 +52,12 @@ const Footer = () => {
                     <FaLinkedinIn />
                   </a>
                   <a
-                    href="/"
+                    href="https://www.instagram.com/faizproducoes/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
                   >
                     <FaInstagram />
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
-                  >
-                    <FaWhatsapp />
                   </a>
                 </div>
               </div>
@@ -83,29 +75,29 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="hover:text-brand-50 transition duration-500">
-                    <Link href="/sobre-curso">
+                    <Link href="/quem-somos">
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaAngleDoubleRight />
                       </span>
-                      Sobre o curso
+                      Quem Somos
                     </Link>
                   </li>
                   <li className="hover:text-brand-50 transition duration-500">
-                    <Link href="/grade-curricular">
+                    <Link href="/servicos">
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaAngleDoubleRight />
                       </span>
-                      Grade curricular
+                      Serviços
                     </Link>
                   </li>
-                  {/* <li className="hover:text-brand-50 transition duration-500">
-                    <Link href="/blog">
+                  <li className="hover:text-brand-50 transition duration-500">
+                    <Link href="/contato">
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaAngleDoubleRight />
                       </span>
-                      Blog
+                      Contato
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
               <div className="text-white">
@@ -113,7 +105,7 @@ const Footer = () => {
                 <ul className="flex gap-y-2 flex-col">
                   <li className="hover:text-brand-50 transition duration-500">
                     <a
-                      href="mailto:contato@audiovisual.com.br"
+                      href="mailto:contato@faizproducoes.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -125,14 +117,14 @@ const Footer = () => {
                   </li>
                   <li className="hover:text-brand-50 transition duration-500">
                     <a
-                      href="tel:19xxxxxxxxx"
+                      href="https://api.whatsapp.com/send/?phone=5519997844793&text&type=phone_number&app_absent=0"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <span className="inline-block -mb-[2px] mr-1">
-                        <FaAngleDoubleRight />
+                        <FaWhatsapp/>
                       </span>
-                      Atendimento via telefone
+                      Atendimento via Whatsapp
                     </a>
                   </li>
                 </ul>
@@ -145,7 +137,7 @@ const Footer = () => {
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaMapPin />
                       </span>
-                      Av. de Cillo, 3500 - Parque Universitario, Americana - SP, 13467-600
+                      R. Prof. Carlos Liepin, 561 - Bela Vista, Nova Odessa - SP
                     </p>
                   </li>
                 </ul>
