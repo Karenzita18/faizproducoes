@@ -16,7 +16,7 @@ const PoliticaPrivacidade = () => {
           <p className="mb-2 leading-relaxed text-faiz-100">
             A sua privacidade é importante para nós. É política do Faiz Produções respeitar
             a sua privacidade em relação a qualquer informação sua que possamos
-            coletar no site <a href="https://faizproducoes.vercel.app/">Faiz Produçõesr</a>, e
+            coletar no site <a href="https://faizproducoes.vercel.app/">Faiz Produções</a>, e
             outros sites que possuímos e operamos.
           </p>
           <p className="mb-2 leading-relaxed text-faiz-100">
