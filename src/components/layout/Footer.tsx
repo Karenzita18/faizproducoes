@@ -10,6 +10,8 @@ import {
   FaMapPin,
   FaClock,
   FaLinkedinIn,
+  FaEnvelope,
+  FaRegEnvelope,
 } from "react-icons/fa";
 import { Link as Scroll } from "react-scroll";
 
@@ -110,7 +112,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
                     >
                       <span className="inline-block -mb-[2px] mr-1">
-                        <FaAngleDoubleRight />
+                        <FaRegEnvelope/>
                       </span>
                       Atendimento via email
                     </a>

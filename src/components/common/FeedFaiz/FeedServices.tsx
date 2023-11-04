@@ -11,7 +11,7 @@ const FeedServices = () => {
     <section ref={ref} className="relative overflow-hidden bg-faiz-300/30">
       <div className="row relative">
         <div className="container">
-        <h1 className="text-4xl font-semibold text-center mb-3 text-faiz-100">
+        <h1 className="text-4xl font-bold text-center mb-3 text-faiz-100">
 			Nossos Serviços
 		</h1>
           <div className="grid max-w-sm mx-auto sm:max-w-full sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-5">
@@ -66,25 +66,25 @@ const services = [
   {
     title: "Produção",
     slug: "producao",
-    desc: "Fazemos qualquer tipo de serviço relacionado à vídeo, imagem, áudio. organização de eventos e outras soluções para o seu negócio.",
+    desc: "Fazemos qualquer tipo de serviço relacionado à vídeo, imagem, áudio, organização de eventos e outras soluções para o seu negócio.",
     size: "h-20 w-20",
   },
   {
     title: "Publicidade",
     slug: "publicidade",
-    desc: "Fazemos qualquer tipo de serviço relacionado à comunição do seu negócio. Trabalhamos com dados e por isso temos uma equipe para fazer pesquisas e planejar as melhores soluções para comunicar de forma eficaz.",
+    desc: "Fazemos qualquer tipo de serviço relacionado à comunicação do seu negócio. Trabalhamos com dados e por isso temos uma equipe para fazer pesquisas e planejar as melhores soluções para comunicar de forma eficaz.",
     size: "h-20 w-20",
   },
   {
     title: "Projetos",
     slug: "projetos",
-    desc: "Além de termos uma equipe pronta para realizar os nossos servições, também podemos elaborar projetos para que sua própria equipe possa realizar de forma autônoma.",
+    desc: "Além de termos uma equipe pronta para realizar os nossos serviços, também podemos elaborar projetos para que sua própria equipe possa realizar de forma autônoma.",
     size: "h-20 w-20",
   },
   {
     title: "Assessoria",
     slug: "assessoria",
-    desc: "Além de todos os servições prestados, também fornecemos apenas a opção de assesssoria, com análises, dicas e treinamentos para qualquer área necessário para melhorar sua empresa.",
+    desc: "Além de todos os serviços prestados, também fornecemos apenas a opção de assessoria, com análises, dicas e treinamentos para qualquer área necessária para melhorar sua empresa.",
     size: "h-24 w-24",
   }
 ];

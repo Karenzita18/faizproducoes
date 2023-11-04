@@ -11,7 +11,7 @@ const FeedClientes = () => {
 		<section>
 			<div className="row">
 				<div className="container">
-					<h1 className="text-4xl font-semibold text-center mb-3">
+					<h1 className="text-4xl font-bold text-center mb-3">
 						Clientes
 					</h1>
 					<p className="text-center text-lg mb-6 text-faiz-100">

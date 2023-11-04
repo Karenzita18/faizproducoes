@@ -19,10 +19,10 @@ const FeedAbout = () => {
 							</div>
 						</div>
 						<div className="animate-fadeInLeft animate-delay-200">
-							<h1 className="text-xl md:text-xl mb-4 font-medium">
+							<h1 className="text-1xl md:text-3xl mb-4 font-bold justify-center">
 								Comunicamos pessoas, negócios e propósitos.
 							</h1>
-							<h1 className="text-xl md:text-xl mb-4 font-medium"> 
+							<h1 className="text-1xl md:text-3xl mb-4 font-bold"> 
 								Solucionamos problemas
 							</h1>
 						</div>
