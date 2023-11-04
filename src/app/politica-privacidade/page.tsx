@@ -1,20 +1,18 @@
-import FeedAbout from "@/components/common/projetos/FeedAbout";
-import HeroCommon from "@/components/common/projetos/HeroCommon";
-import FeedDetalhe from "@/components/common/projetos/FeedDetalhe";
+import HeroCommon from "@/components/common/politica-privacidade/HeroCommon";
+import PoliticaPrivacidade from "@/components/common/politica-privacidade/politica-privacidade"
 
 export default function Page() {
   return (
     <main className="mt-20">
         <HeroCommon/>
-        <FeedAbout/>
-        <FeedDetalhe/>
+        <PoliticaPrivacidade/>
     </main>
   );
 }
 
 export const metadata = {
   title:
-    "Projetos | Faiz Produções",
+    "Política Privacidade | Faiz Produções",
   description: "",
   keywords: [
     "Faiz produções",

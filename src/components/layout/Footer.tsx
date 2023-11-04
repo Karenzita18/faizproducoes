@@ -12,6 +12,7 @@ import {
   FaLinkedinIn,
   FaEnvelope,
   FaRegEnvelope,
+  FaYoutube,
 } from "react-icons/fa";
 import { Link as Scroll } from "react-scroll";
 
@@ -60,6 +61,14 @@ const Footer = () => {
                     className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
                   >
                     <FaInstagram />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@faizproducoes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
+                  >
+                    <FaYoutube />
                   </a>
                 </div>
               </div>

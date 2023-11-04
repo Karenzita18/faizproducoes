@@ -10,6 +10,7 @@ import {
   FaLinkedinIn,
   FaAngleDown,
   FaChevronDown,
+  FaYoutube,
 } from "react-icons/fa";
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
@@ -38,6 +39,7 @@ export default function Header() {
       facebook: "https://www.facebook.com/faizproducoes",
       linkedIn: "https://www.linkedin.com/company/faizproducoes/",
       instagram: "https://www.instagram.com/faizproducoes/",
+      youtube: "https://www.youtube.com/@faizproducoes",
       whatsapp:
         "/",
     },
@@ -99,6 +101,14 @@ export default function Header() {
                 className="p-3"
               >
                 <FaLinkedinIn />
+              </a>
+              <a
+                href={data.redeSocial.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3"
+              >
+                <FaYoutube />
               </a>
             </div>
           </div>

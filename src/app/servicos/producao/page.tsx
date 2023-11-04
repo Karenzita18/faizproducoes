@@ -1,11 +1,13 @@
 import FeedAbout from "@/components/common/producao/FeedAbout";
 import HeroCommon from "@/components/common/producao/HeroCommon";
+import FeedDetalhe from "@/components/common/producao/FeedDetalhe";
 
 export default function Page() {
   return (
     <main className="mt-20">
         <HeroCommon/>
         <FeedAbout/>
+        <FeedDetalhe/>
     </main>
   );
 }

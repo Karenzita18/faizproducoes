@@ -157,7 +157,7 @@ const FeedForm = () => {
         </div>
       </div>
 
-      <div className="flex gap-x-1 flex-nowrap mt-5 text-brand-100 text-sm">
+      <div className="flex gap-x-1 flex-nowrap mt-5 text-faiz-100 text-sm">
         <input
           type="checkbox"
           name="pp"
@@ -166,15 +166,15 @@ const FeedForm = () => {
         <label htmlFor="pp">
           Eu concordo com as{" "}
           <a
-            href="/politica-de-privacidade"
+            href="/politica-privacidade"
             target="_blank"
-            className="underline text-brand-50 hover:text-brand-100 transition duration-500"
+            className="underline text-brand-50 hover:text-faiz-300 transition duration-500"
           >
             Políticas de Privacidade
           </a>
         </label>
       </div>
-      <p className={`${msgPP} text-brand-100 text-sm mt-1`}>
+      <p className={`${msgPP} text-faiz-400 text-sm mt-1`}>
         Para enviar, você precisa concordar as com as políticas de privacidade.
     </p>
 
