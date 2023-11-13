@@ -181,10 +181,10 @@ const Footer = () => {
           <div className="text-black flex gap-2 text-sm">
             Desenvolvido por
             <a
-              href="/"
+              href="https://www.instagram.com/la_karenzinha/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-50 underline hover:text-brand-100 transition duration-500"
+              className="text-brand-50 underline hover:text-faiz-300 transition duration-500"
             >
               Karen Souza
             </a>

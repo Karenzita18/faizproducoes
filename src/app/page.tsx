@@ -3,6 +3,7 @@ import FeedAbout from "@/components/common/FeedFaiz/FeedAbout";
 import FeedClientes from "@/components/common/FeedFaiz/FeedClientes";
 //import FeedPortifolio from "@/components/common/FeedFaiz/FeedPortifolio";
 import { Exo } from "next/font/google";
+import FeedQuadrado from "@/components/common/FeedFaiz/FeedQuadrado";
 
 const exo = Exo({
   subsets: ["latin"],
@@ -15,8 +16,11 @@ export default function Home() {
   return (
     <main className={exo.className}>
       <FeedAbout/>
+      <FeedQuadrado/>
       <FeedClientes/>
+      <FeedQuadrado/>
       <FeedServices/>
+      <FeedQuadrado/>
     </main>
   );
 }

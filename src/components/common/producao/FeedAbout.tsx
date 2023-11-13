@@ -21,8 +21,8 @@ const FeedAbout = () => {
                 }`}
               >
                 <Image
-                  src="/img/quem-somos3.png"
-                  width={400}
+                  src="/img/producao-1.png"
+                  width={600}
                   height={400}
                   alt="Produção"
                   className="rounded-md shadow-lg"

@@ -15,7 +15,7 @@ const FeedClientes = () => {
 						Clientes
 					</h1>
 					<p className="text-center text-lg mb-6 text-faiz-100">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Desbrave o mundo de oportunidades junto com nossos clientes satisfeitos. 
 					</p>
 					<Swiper
 						slidesPerView={1}
@@ -40,38 +40,38 @@ const FeedClientes = () => {
 						className=""
 					>
 						<SwiperSlide className="relative m-auto">
-							<div className="w-1/2 flex m-auto items-center justify-center h-full">
+							<div className="w-1/2 flex m-auto mx-5 items-center justify-center h-full">
 								<img 
-									src="/img/clientes/WA-NOTICIAS.webp" 
-									alt="WA-NOTICIAS" 
-									title="WA-NOTICIAS" 
+									src="/img/clientes/PREFEITURA_NOVA-ODESSA.webp" 
+									alt="Prefeitura de Nova Odessa" 
+									title="Prefeitura de Nova Odessa" 
 								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/VILLE.webp"
-									alt="VILLE"
-									title="VILLE"
+									src="/img/clientes/LOGO_CAMARA.webp"
+									alt="CAMARA MUNICIPAL DE NOVA ODESSA"
+									title="CAMARA MUNICIPAL DE NOVA ODESSA"
 								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/UPTV.webp"
-									alt="UPTV"
-									title="UPTV"
+									src="/img/clientes/EDSON-HUDSON.webp"
+									alt="EDSON HUDSON"
+									title="EDSON HUDSON"
 								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="relative m-auto">
-							<div className="w-3/4 m-auto flex mx-5 items-center justify-center h-full">
+							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/TV-TODODIA.webp"
-									alt="TV TODO DIA"
-									title="TV TODO DIA"
+									src="/img/clientes/CARREIRO-CAPATAZ.webp"
+									alt="CARREIRO CAPATAZ"
+									title="CARREIRO CAPATAZ"
 								/>
 							</div>
 						</SwiperSlide>
@@ -87,9 +87,9 @@ const FeedClientes = () => {
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/RADIO-PARAISO.webp"
-									alt="RÁDIO PARAISO"
-									title="RÁDIO PARAISO"
+									src="/img/clientes/VILLE.webp"
+									alt="VILLE"
+									title="VILLE"
 								/>
 							</div>
 						</SwiperSlide>
@@ -103,38 +103,47 @@ const FeedClientes = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="relative m-auto">
-							<div className="w-1/2 flex m-auto mx-5 items-center justify-center h-full">
+							<div className="flex my-auto mx-5 items-center justify-center h-full">
+								<img
+									src="/img/clientes/BLUE-TRADING.webp"
+									alt=""
+									title=""
+								/>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="relative m-auto">
+							<div className="w-1/2 flex m-auto items-center justify-center h-full">
 								<img 
-									src="/img/clientes/PREFEITURA_NOVA-ODESSA.webp" 
-									alt="" 
-									title="" 
+									src="/img/clientes/WA-NOTICIAS.webp" 
+									alt="WA-NOTICIAS" 
+									title="WA-NOTICIAS" 
+								/>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="relative m-auto">
+							<div className="w-3/4 m-auto flex mx-5 items-center justify-center h-full">
+								<img
+									src="/img/clientes/TV-TODODIA.webp"
+									alt="TV TODO DIA"
+									title="TV TODO DIA"
 								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/LOGO_CAMARA.webp"
-									alt=""
-									title=""
+									src="/img/clientes/UPTV.webp"
+									alt="UPTV"
+									title="UPTV"
 								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/IGREJA-NAZARENO.webp"
-									alt=""
-									title=""
-								/>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className="relative m-auto">
-							<div className="flex my-auto mx-5 items-center justify-center h-full">
-								<img
-									src="/img/clientes/IGREJA-CONVIVA.webp"
-									alt=""
-									title=""
+									src="/img/clientes/RADIO-PARAISO.webp"
+									alt="RÁDIO PARAISO"
+									title="RÁDIO PARAISO"
 								/>
 							</div>
 						</SwiperSlide>
@@ -142,24 +151,6 @@ const FeedClientes = () => {
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
 									src="/img/clientes/IGREJA_NOVA-ALIANCA.webp"
-									alt=""
-									title=""
-								/>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className="relative m-auto">
-							<div className="flex my-auto mx-5 items-center justify-center h-full">
-								<img
-									src="/img/clientes/IGREJA_CELEBRANDO-AO-REI.webp"
-									alt=""
-									title=""
-								/>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className="relative m-auto">
-							<div className="flex my-auto mx-5 items-center justify-center h-full">
-								<img
-									src="/img/clientes/EDSON-HUDSON.webp"
 									alt=""
 									title=""
 								/>
@@ -177,7 +168,7 @@ const FeedClientes = () => {
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/CARREIRO-CAPATAZ.webp"
+									src="/img/clientes/IGREJA_CELEBRANDO-AO-REI.webp"
 									alt=""
 									title=""
 								/>
@@ -186,7 +177,16 @@ const FeedClientes = () => {
 						<SwiperSlide className="relative m-auto">
 							<div className="flex my-auto mx-5 items-center justify-center h-full">
 								<img
-									src="/img/clientes/BLUE-TRADING.webp"
+									src="/img/clientes/IGREJA-CONVIVA.webp"
+									alt=""
+									title=""
+								/>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="relative m-auto">
+							<div className="flex my-auto mx-5 items-center justify-center h-full">
+								<img
+									src="/img/clientes/IGREJA-NAZARENO.webp"
 									alt=""
 									title=""
 								/>
