@@ -55,12 +55,12 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/img/favicon.png",
-    shortcut: "/img/favicon.png",
-    apple: "/img/favicon.png",
+    icon: "/img/icone.webp",
+    shortcut: "/img/icone.webp",
+    apple: "/img/icone.webp",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "/img/favicon.png",
+      url: "/img/icone.webp",
     },
   },
 };
