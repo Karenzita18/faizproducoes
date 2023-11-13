@@ -29,13 +29,14 @@ const Footer = () => {
             <div className="col-span-4 md:col-span-1">
               <div className="max-w-[15rem] ">
                 <Image
-                  src="/img/logo-header.png"
-                  width={600}
-                  height={204}
-                  alt="Logo Footer"
+                  src="/img/LOGO_Faiz_branco.webp"
+                  width={150}
+                  height={150}
+                  alt="Logo Footer" 
+                  
                 />
                 <p className="text-white leading-5 mt-3 text-justify">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                “Faça o teu melhor, na condição que você tem, enquanto você não tem condições melhores para fazer melhor ainda” Mário Sergio Cortella
                 </p>
                 <div className="flex gap-x-3 mt-5 md:place-content-center">
                   <a
