@@ -1,10 +1,12 @@
 import HeroCommon from "@/components/common/quem-somos/HeroCommon";
 import FeedCeo from "@/components/common/quem-somos/FeedCeo";
+import FeedQuadrado from "@/components/common/FeedFaiz/FeedQuadrado";
 
 export default function Page() {
   return (
     <main className="mt-20">
         <HeroCommon/>
+        <FeedQuadrado/>
         <FeedCeo/>
     </main>
   );

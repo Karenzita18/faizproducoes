@@ -1,3 +1,4 @@
+import FeedQuadrado from "@/components/common/FeedFaiz/FeedQuadrado";
 import FeedAbout from "@/components/common/assessoria/FeedAbout";
 import HeroCommon from "@/components/common/assessoria/HeroCommon";
 
@@ -5,6 +6,7 @@ export default function Page() {
   return (
     <main className="mt-20">
         <HeroCommon/>
+        <FeedQuadrado/>
         <FeedAbout/>
     </main>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const QuadradosColoridos = () => {
-  const cores = ['#312782', '#e20613', '#e61b72', '#29a600', '#169cd8', 'yellow', '#D3D3D3'];
+  const cores = ['#312782', '#e20613', '#e61b72', '#29a600', '#169cd8', '#ffff00', '#D3D3D3'];
 
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
