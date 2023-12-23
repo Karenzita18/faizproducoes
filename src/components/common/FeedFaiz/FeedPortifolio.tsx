@@ -7,7 +7,7 @@ const FeedPortifolio= () => {
   const { ref, inView, entry } = useInView();
 
   return (
-    <section className="pt-14 text-white relative bg-white">
+    <section id="portfolio" className="pt-14 text-white relative bg-white">
 		<div className="row z-10 relative">
 			<div className="container md:grid md:grid-cols-4 gap-2 md:gap-2 items-center">
                 <div className="col-span-2">
