@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Image from "next/image";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -49,7 +49,12 @@ const FeedClienteTeste = () => {
               >
                 <SwiperSlide className="py-3">
                     <div className="max-w-xs mx-auto shadow-md rounded-tr-3xl rounded-bl-3xl rounded overflow-hidden hover:-translate-y-2 transition duration-500 group">
-                      <img src="/img/Clientes-novos/prefeitura-nova-odessa.webp" alt="Prefeitura Nova Odessa" />
+                      <Image
+                        src="/img/Clientes-novos/prefeitura-nova-odessa.webp" 
+                        alt="Prefeitura Nova Odessa" 
+                        width={500}
+                        height={344}
+                      />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="py-3">

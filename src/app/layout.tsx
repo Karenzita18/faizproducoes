@@ -71,21 +71,21 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=WWN2PP5T" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=PHCDW6S3" />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'WWN2PP5T');
+          gtag('config', 'PHCDW6S3');
         `}
         </Script>
       </head>
       <body className={exo.className}>
         <noscript
           dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWN2PP5T"
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHCDW6S3"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
