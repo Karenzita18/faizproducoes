@@ -192,14 +192,13 @@ export default function Header() {
                         </div>
                       </div>
                     </div>
-                    <Scroll
-                        to="portfolio"
-                        smooth
-                        offset={-100}
-                        className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                      >
-                        Portfólio
-                    </Scroll>
+                    <Link
+                      href="https://www.behance.net/faizproducoes"
+                      target="_blank"
+                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
+                    >
+                      Portfólio
+                    </Link>
                     <Link
                       href="/contato"
                       className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
@@ -330,14 +329,13 @@ export default function Header() {
                     </Transition>
                   </Menu>
                   <div className="mt-3 ml-3 mb-3" onClick={closeMenu}>
-                    <Scroll
-                        to="portfolio"
-                        smooth
-                        offset={-100}
-                        className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                      >
-                        Portfólio
-                    </Scroll>
+                    <Link
+                      href="https://www.behance.net/faizproducoes"
+                      target="_blank"
+                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
+                    >
+                      Portfólio
+                    </Link>
                   </div>
                   <div className="mt-3 ml-3 mb-3" onClick={closeMenu}>
                     <Link
