@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="-translate-y-1/2 flex place-content-end overflow-x-hidden relative z-10">
         <div className=""></div>
       </div>
-      <div className="row py-20 px-5">
+      <div className="row py-16 px-5">
         <div className="container">
           <div className="grid grid-cols-4 gap-3">
             <div className="col-span-4 md:col-span-1">
@@ -38,40 +38,6 @@ const Footer = () => {
                 <p className="text-white leading-5 mt-3 text-justify">
                 “Faça o teu melhor, na condição que você tem, enquanto você não tem condições melhores para fazer melhor ainda” Mário Sergio Cortella
                 </p>
-                <div className="flex gap-x-3 mt-5 md:place-content-center">
-                  <a
-                    href="https://www.facebook.com/faizproducoes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
-                  >
-                    <FaFacebookF />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/faizproducoes/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/faizproducoes/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
-                  >
-                    <FaInstagram />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@faizproducoes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
-                  >
-                    <FaYoutube />
-                  </a>
-                </div>
               </div>
             </div>
             <div className="col-span-4 md:col-span-3 grid md:grid-cols-3 gap-5">
@@ -140,6 +106,43 @@ const Footer = () => {
                     </a>
                   </li>
                 </ul>
+                <h2 className="font-bold mb-3 mt-4 text-xl">
+                  Redes Sociais
+                </h2>
+                <div className="flex gap-x-3 mt-5 ">
+                  <a
+                    href="https://www.facebook.com/faizproducoes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
+                  >
+                    <FaFacebookF />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/faizproducoes/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/faizproducoes/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@faizproducoes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-faiz-200 rounded-full text-black hover:-translate-y-1 transition duration-500"
+                  >
+                    <FaYoutube />
+                  </a>
+                </div>
               </div>
               <div className="text-white">
                 <h2 className="font-bold mb-3 text-xl">Endereço</h2>

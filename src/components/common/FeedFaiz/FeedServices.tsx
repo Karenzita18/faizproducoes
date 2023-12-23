@@ -11,9 +11,9 @@ const FeedServices = () => {
     <section ref={ref} className="relative overflow-hidden bg-faiz-300/30">
       <div className="row relative">
         <div className="container">
-        <h1 className="text-4xl font-bold text-center mb-3 text-faiz-100">
-			Nossos Serviços
-		</h1>
+          <h1 className="text-4xl font-bold text-center mb-3 text-faiz-100">
+			      Nossos Serviços
+		      </h1>
           <div className="grid max-w-sm mx-auto sm:max-w-full sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-5">
             {services.map((item) => (
               <div
@@ -32,7 +32,7 @@ const FeedServices = () => {
                     {item.desc}
                   </p>
                   <div
-                      className={`relative z-10 hover:-translate-y-2 transition duration-500 mt-5 ${
+                      className={`relative z-10 hover:-translate-y-2 transition duration-500 mt-5 mb-5 ${
                         inView &&
                         "animate-fade-up animate-delay-200 animate-duration-500 text-center"
                       }`}
@@ -44,13 +44,6 @@ const FeedServices = () => {
                         Saiba Mais
                       </Link>
                     </div>
-                </div>
-                <div>
-                  <div
-                    className={`${item.size} ml-auto text-faiz-100 group-hover:text-white`}
-                  >
-                    
-                  </div>
                 </div>
               </div>
             ))}
