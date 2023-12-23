@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 const FeedClienteTeste = () => {
   return (
-    <div className="relative bg-zinc-50">
+    <div className="relative bg-white">
       <div className="absolute z-0 w-full h-3/5 bg-brand-150 -top-14"></div>
       <section className="relative py-10">
         <div className="row">

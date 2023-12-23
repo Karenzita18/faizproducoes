@@ -4,6 +4,7 @@ import FeedClientes from "@/components/common/FeedFaiz/FeedClientes";
 //import FeedPortifolio from "@/components/common/FeedFaiz/FeedPortifolio";
 import { Exo } from "next/font/google";
 import FeedQuadrado from "@/components/common/FeedFaiz/FeedQuadrado";
+import FeedClienteTeste from "@/components/common/FeedFaiz/FeedClienteTeste";
 
 const exo = Exo({
   subsets: ["latin"],
