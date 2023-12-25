@@ -151,60 +151,55 @@ export default function Header() {
                   </Link>
                 </div>
                 <div className="hidden lg:block">
-                  <div className="hidden mr-5 sm:flex flex-nowrap items-center">
-                    <Link
-                      href="/"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Home
-                    </Link>
-                    <Link
-                      href="/quem-somos"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Quem Somos
-                    </Link>
-                    <div className="relative text-right">
-                      <div className="group relative">
-                        <Link
-                          href="/servicos"
-                          className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                        >
-                          Serviços
-                          <span className="inline-block -mb-1">
-                            <FaAngleDown
-                              className="ml-2 -mr-1 h-5 w-5 font-medium opacity-75 text-faiz-100 group-hover:text-faiz-300 transition duration-500"
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </Link>
-                        <div className="group-hover:absolute hidden group-hover:block bg-white shadow-md p-[2px] w-48 top-12">
-                          {servicos.map((item, i) => (
-                            <div key={i}>
-                              <Link
-                                href={`/servicos/${item.href}`}
-                                className="hover:bg-faiz-300 hover:text-white text-faiz-100 group text-start flex w-full items-center rounded-md px-2 py-2 font-medium"
-                              >
-                                {item.name}
-                              </Link>
+                  <div className=" flex items-center space-x-4 font-semibold" >
+                    {navigation.map((item) =>
+                      item.name == "Serviços" ? (
+                        <>
+                          <div
+                            key={item.href}
+                            className="group relative text-right"
+                          >
+                            <Link
+                              key={item.name}
+                              href={`${item.href}`}
+                              className={
+                                navbar
+                                  ? ` cursor-pointer tracking-wider px-3 py-7 font-semibold hover:text-faiz-300 text-faiz-100`
+                                  : ` cursor-pointer transition tracking-wider hover:text-faiz-300 px-3 py-7 font-semibold text-faiz-100`
+                              }
+                            >
+                              {item.name}
+                              <span className="inline-block -mb-1">
+                                <FaAngleDown />
+                              </span>
+                            </Link>
+                            <div className="hidden group-hover:block absolute top-9 bg-white w-48 p-[2px]">
+                              {servicos.map((item, i) => (
+                                <Link
+                                  key={i}
+                                  href={`/servicos/${item.href}`}
+                                  className="hover:bg-faiz-100 text-faiz-100 hover:text-white group text-start flex w-full items-center rounded-md px-2 py-2 text-base font-semibold "
+                                >
+                                  {item.name}
+                                </Link>
+                              ))}
                             </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    <Link
-                      href="https://www.behance.net/faizproducoes"
-                      target="_blank"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Portfólio
-                    </Link>
-                    <Link
-                      href="/contato"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Contato
-                    </Link>
+                          </div>
+                        </>
+                      ) : (
+                        <Link
+                          key={item.name}
+                          href={`${item.href}`}
+                          className={
+                            navbar
+                              ? ` cursor-pointer tracking-wider px-3 py-7 font-semibold hover:text-faiz-300 text-faiz-100 `
+                              : ` cursor-pointer transition tracking-wider hover:text-faiz-300 px-3 py-7 font-semibold text-faiz-100`
+                          }
+                        >
+                          {item.name}
+                        </Link>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
@@ -270,80 +265,60 @@ export default function Header() {
                   ref={ref}
                   className="bg-zinc-100 -mx-5 px-2 space-y-1 sm:px-3 py-10"
                 >
-                  <div className=" ml-3 mb-3" onClick={closeMenu}>
-                    <Link
-                      href="/"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Home
-                    </Link>
-                  </div>
-                  <div className="mt-3 ml-3 mb-3" onClick={closeMenu}>
-                    <Link
-                      href="/quem-somos"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Quem Somos
-                    </Link>
-                  </div>
-                  
-                  <Menu as="div" className=" mt-3 ml-3 mb-3 " onClick={closeMenu}>
-                    <Menu.Button
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-3 cursor-pointer"
-                      onClick={toggleMenu}
-                    >
-                      Serviços
-                      <span className="inline-block -mb-1 text-faiz-100">
-                        <FaAngleDown />
-                      </span>
-                    </Menu.Button>
-                    <Transition
-                      show={isMenuOpen}
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="ml-5 mb-0 origin-top-right divide-y divide-gray-100">
-                        <div className="px-1 pb-1" onClick={closeMenu}>
-                          {servicos.map((item, i) => (
-                            <Menu.Item key={i}>
-                              {({ active }) => (
-                                <Link
-                                  href={`/servicos/${item.href}`}
-                                  className={`${
-                                    active ? 'bg-faiz-100 text-white' : 'text-faiz-100'
-                                  } group text-start flex w-full items-center rounded-md px-1 py-1 text-base`}
-                                  
-                                >
-                                  {item.name}
-                                </Link>
-                              )}
-                            </Menu.Item>
-                          ))}
+                  <div>
+                    {navigation.map((item) =>
+                      item.name == "Serviços" ? (
+                        <div key={item.href} className="relative text-right">
+                          <Menu as="div" className="">
+                            <Menu.Button className="cursor-pointer text-brand-100 block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+                              Serviços
+                              <span className="inline-block -mb-1 text-brand-100">
+                                <FaAngleDown />
+                              </span>
+                            </Menu.Button>
+                            <Transition
+                              as={Fragment}
+                              enter="transition ease-out duration-100"
+                              enterFrom="transform opacity-0 scale-95"
+                              enterTo="transform opacity-100 scale-100"
+                              leave="transition ease-in duration-75"
+                              leaveFrom="transform opacity-100 scale-100"
+                              leaveTo="transform opacity-0 scale-95"
+                            >
+                              <Menu.Items className="ml-5 mb-0 origin-top-right divide-y divide-gray-100 ">
+                                <div className="px-1 pb-1" onClick={closeMenu}>
+                                  {servicos.map((item, i) => (
+                                    <Menu.Item key={i}>
+                                      {({ active }) => (
+                                        <Link
+                                          href={`/servicos/${item.href}`}
+                                          className={`${
+                                            active
+                                              ? "bg-brand-100 text-white "
+                                              : "text-brand-100"
+                                          } group text-start flex w-full items-center rounded-md px-1 py-1 text-base `}
+                                        >
+                                          {item.name}
+                                        </Link>
+                                      )}
+                                    </Menu.Item>
+                                  ))}
+                                </div>
+                              </Menu.Items>
+                            </Transition>
+                          </Menu>
                         </div>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
-                  <div className="mt-3 ml-3 mb-3" onClick={closeMenu}>
-                    <Link
-                      href="https://www.behance.net/faizproducoes"
-                      target="_blank"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Portfólio
-                    </Link>
-                  </div>
-                  <div className="mt-3 ml-3 mb-3" onClick={closeMenu}>
-                    <Link
-                      href="/contato"
-                      className="font-medium text-black hover:text-black/80 text-lg px-5 py-5 cursor-pointer"
-                    >
-                      Contato
-                    </Link>
+                      ) : (
+                        <Link
+                          key={item.name}
+                          href={`${item.href}`}
+                          className="cursor-pointer text-brand-100 block px-3 py-2 rounded-md text-base font-semibold tracking-wider"
+                          onClick={closeMenu}
+                        >
+                          {item.name}
+                        </Link>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
