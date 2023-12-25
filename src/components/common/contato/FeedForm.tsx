@@ -46,7 +46,7 @@ const FeedForm = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Origin: "https://localhost:3000/",
+        Origin: "http://localhost:3000/",
       },
       body: JSON.stringify(data),
     })
@@ -225,7 +225,7 @@ const FeedForm = () => {
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="flex max-w-max  bg-brand-100 rounded-md duration-500 hover:shadow-2xl text-white py-2 px-6 md:px-10 font-semibold shadow-xl mt-3 group mx-auto"
+                      className="flex max-w-max  bg-faiz-100 rounded-md duration-500 hover:shadow-2xl text-white py-2 px-6 md:px-10 font-semibold shadow-xl mt-3 group mx-auto"
                       onClick={closeModal}
                     >
                       OK

@@ -19,7 +19,7 @@ export default function sendEmail(req, res) {
   }
 
   const allowedOrigins = [
-    'http://localhost:3000',
+    'http://localhost:3000/',
     'https://faizproducoes.vercel.app/',
     'https://localhost:3000/',
   ];
@@ -35,7 +35,7 @@ export default function sendEmail(req, res) {
     host: "mail.woltecnologia.com.br",
     service: "mail.woltecnologia.com.br",
     port: 465,
-    secure: true,
+    secure: false,
     auth: {
       user: 'formulario@woltecnologia.com.br',
       pass: 'sC-og1$v1pVC',
@@ -43,8 +43,8 @@ export default function sendEmail(req, res) {
   });
   transporter
     .sendMail({
-      from: `"Formulario Maximus" <webdesign@wolmkt.com.br>`,
-      to: 'webdesign@wolmkt.com.br',
+      from: `"Formulario Maximus" <karenstudy17@gmail.com>`,
+      to: 'karenstudy17@gmail.com',
       replayTo: req.body.email,
       subject: 'Formulário de contato',
       text: req.body.message,

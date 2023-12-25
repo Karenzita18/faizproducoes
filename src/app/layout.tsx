@@ -13,7 +13,7 @@ const exo = Exo({
 
 export const metadata: Metadata = {
   title: "Faiz Produções",
-  description: "",
+  description: "Somos uma agência dedicada a conceber e executar projetos criativos, desde vídeos envolventes até eventos memoráveis. Com uma equipe apaixonada e experiente, combinamos inovação, tecnologia e expertise para oferecer soluções de produção de alta qualidade. Seja para publicidade, entretenimento ou eventos corporativos",
   keywords: [
     "Faiz produções",
     "tecnologia",
@@ -23,9 +23,24 @@ export const metadata: Metadata = {
     "Projetos",
     "AudioVisual",
     "Serviços",
+    "Inovação",
+    "Experiência",
+    "Criatividade",
+    "Eventos",
+    "Marketing",
+    "Vídeos",
+    "Entretenimento",
+    "Qualidade",
+    "Estratégia",
+    "Comunicação",
+    "Digital",
+    "Arte",
+    "Design",
+    "Produção Audiovisual",
+    "Criação",
   ],
   alternates: {
-    canonical: "faizproducoes.com",
+    canonical: "faizproducoes.vercel.app",
     languages: {
       "pt-BR": "/pt-BR",
     },

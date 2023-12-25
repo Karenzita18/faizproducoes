@@ -22,6 +22,7 @@ export default function Home() {
       <FeedServices/>
       <FeedQuadrado/>
       <FeedPortifolio/>
+      <FeedQuadrado/>
     </main>
   );
 }
