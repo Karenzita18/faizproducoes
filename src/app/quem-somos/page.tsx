@@ -10,6 +10,7 @@ export default function Page() {
         <FeedQuadrado/>
         <FeedValores/>
         <FeedCeo/>
+        <FeedQuadrado/>
     </main>
   );
 }

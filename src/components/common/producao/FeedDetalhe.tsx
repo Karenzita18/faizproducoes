@@ -18,7 +18,8 @@ const FeedServices = () => {
             {services.map((item) => (
               <div
                 key={item.desc1}
-                className={`bg-faiz-200/80 backdrop-blur-sm pt-5 sm:pt-4 px-5 sm:px-8 flex flex-col justify-between shadow-md group hover:scale-[101%] transition duration-300 hover:-translate-y-1 border-b-4 border-faiz-200 gap-y-3 hover:bg-faiz-100 hover:border-white ${
+                className={`bg-faiz-200/80 backdrop-blur-sm pt-5 sm:pt-4 px-5 sm:px-8 flex flex-col justify-between shadow-md group hover:scale-[101%] transition duration-300 hover:-translate-y-1 gap-y-3 hover:bg-faiz-100  rounded-t-lg rounded-b-lg       
+                ${
                   inView &&
                   "animate-fade animate-duration-500 animate-delay-100"
                 }`}

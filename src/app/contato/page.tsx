@@ -8,6 +8,7 @@ export default function Page() {
         <HeroCommon/>
         <FeedQuadrado/>
         <FeedContato/>
+        <FeedQuadrado/>
     </main>
   );
 }

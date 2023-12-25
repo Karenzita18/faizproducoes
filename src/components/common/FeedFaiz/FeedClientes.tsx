@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
-const FeedClienteTeste = () => {
+const FeedClientes = () => {
   return (
     <div className="relative bg-zinc-50">
       <div className="absolute z-0 w-full h-3/5 bg-brand-150 -top-14"></div>
@@ -265,4 +265,4 @@ const FeedClienteTeste = () => {
   );
 };
 
-export default FeedClienteTeste;
+export default FeedClientes;
