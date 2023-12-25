@@ -69,9 +69,11 @@ const FeedClienteTeste = () => {
                 </SwiperSlide>
                 <SwiperSlide className="py-3">
                     <div className="max-w-xs mx-auto shadow-md rounded-tr-3xl rounded-bl-3xl rounded overflow-hidden hover:-translate-y-2 transition duration-500 group">
-                      <img
-                      src="https://via.placeholder.com/500x344" 
-                      alt="Copeno" 
+                      <Image
+                        src="/img/Clientes-novos/edson-hudson.webp" 
+                        alt="Edson & Hudson"
+                        width={500}
+                        height={344}
                       />
                     </div>
                 </SwiperSlide>
@@ -82,12 +84,17 @@ const FeedClienteTeste = () => {
                         alt="Carreiro Capataz"
                         width={500}
                         height={344}
-                       />
+                      />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="py-3">
                     <div className="max-w-xs mx-auto shadow-md rounded-tr-3xl rounded-bl-3xl rounded overflow-hidden hover:-translate-y-2 transition duration-500 group">
-                      <img src="https://via.placeholder.com/500x344" alt="Copeno" />
+                    <Image
+                        src="/img/Clientes-novos/sbvc.webp" 
+                        alt="SBVC"
+                        width={500}
+                        height={344}
+                      />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="py-3">
@@ -202,7 +209,12 @@ const FeedClienteTeste = () => {
                 </SwiperSlide>
                 <SwiperSlide className="py-3">
                     <div className="max-w-xs mx-auto shadow-md rounded-tr-3xl rounded-bl-3xl rounded overflow-hidden hover:-translate-y-2 transition duration-500 group">
-                      <img src="https://via.placeholder.com/500x344" alt="Copeno" />
+                      <Image
+                        src="/img/Clientes-novos/celebrando-ao-rei.webp" 
+                        alt="Celebrando ao Rei" 
+                        width={500}
+                        height={344} 
+                      />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="py-3">
