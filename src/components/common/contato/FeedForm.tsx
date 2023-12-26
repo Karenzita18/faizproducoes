@@ -8,6 +8,7 @@ import { SubmitHandler } from "react-hook-form";
 import ReactInputMask from "react-input-mask";
 import { BsSend } from "react-icons/bs";
 import ReCAPTCHA from "react-google-recaptcha";
+
 type Inputs = {
   nome: string;
   email: string;
