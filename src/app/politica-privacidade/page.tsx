@@ -1,3 +1,4 @@
+import FeedQuadrado from "@/components/common/FeedFaiz/FeedQuadrado";
 import HeroCommon from "@/components/common/politica-privacidade/HeroCommon";
 import PoliticaPrivacidade from "@/components/common/politica-privacidade/politica-privacidade"
 
@@ -5,7 +6,9 @@ export default function Page() {
   return (
     <main className="mt-20">
         <HeroCommon/>
+        <FeedQuadrado/>
         <PoliticaPrivacidade/>
+        <FeedQuadrado/>
     </main>
   );
 }

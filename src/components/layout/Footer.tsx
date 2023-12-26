@@ -20,10 +20,7 @@ const Footer = () => {
   const data = new Date(Date.now());
   return (
     <footer className={`bg-faiz-100`}>
-      <div className="-translate-y-1/2 flex place-content-end overflow-x-hidden relative z-10">
-        <div className=""></div>
-      </div>
-      <div className="row py-16 px-5">
+      <div className="row py-8 px-5">
         <div className="container">
           <div className="grid grid-cols-4 gap-3">
             <div className="col-span-4 md:col-span-1">
