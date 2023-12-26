@@ -1,12 +1,13 @@
 "use client";
 
+import axios from "axios";
 import { Dialog, Transition } from "@headlessui/react";
 import { useState, Fragment } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitHandler } from "react-hook-form";
 import ReactInputMask from "react-input-mask";
 import { BsSend } from "react-icons/bs";
-
+import ReCAPTCHA from "react-google-recaptcha";
 type Inputs = {
   nome: string;
   email: string;
@@ -26,6 +27,7 @@ const FeedForm = () => {
   const [telefone, setTelefone] = useState("");
   const [msgPP, setMsgPP] = useState("hidden");
   const [pp, setPP] = useState(false);
+  const [btnDisabled, setBtnDisabled] = useState(true);
 
   function closeModal() {
     setIsOpen(false);
@@ -33,6 +35,33 @@ const FeedForm = () => {
 
   function openModal() {
     setIsOpen(true);
+  }
+
+  function onChange(value: any) {
+    const data = {
+      value: value,
+    };
+    axios
+      .post(`/api/getRecaptcha`, data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then(function (response) {
+        if (response.data.data.success) {
+          setBtnDisabled(false);
+        } else {
+          setBtnDisabled(true);
+        }
+      })
+      .catch(function (error) {
+        if (error.response) {
+        } else if (error.request) {
+          console.log(error.request);
+        } else {
+          console.log("Error", error.message);
+        }
+      });
   }
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
@@ -140,7 +169,7 @@ const FeedForm = () => {
           </label>
           <textarea
             {...register("mensagem", {
-              required: "Especificações é obrigatório",
+              required: "Mensagens é obrigatório",
             })}
             rows={5}
             className="w-full px-3 pb-2 pt-3 bg-zinc-200 rounded-t-sm outline-none transition duration-700 delay-150 relative"
@@ -176,7 +205,12 @@ const FeedForm = () => {
       </div>
       <p className={`${msgPP} text-faiz-400 text-sm mt-1`}>
         Para enviar, você precisa concordar as com as políticas de privacidade.
-    </p>
+      </p>
+      <ReCAPTCHA
+        onChange={onChange}
+        sitekey="6Lf9oDwpAAAAAL-Uhi60zcu3n48NoLeieMFCRtx2"
+        className="pb-1 -mx-3 sm:mx-0 mt-4"
+      />
 
       <div className="mt-8 hover:-translate-y-2 transition duration-500 flex place-content-center">
         <button className="font-bold rounded-full outline-none text-white border border-faiz-300 bg-faiz-100 px-5 py-2   transition duration-500">
