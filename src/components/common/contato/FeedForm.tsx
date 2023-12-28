@@ -66,17 +66,18 @@ const FeedForm = () => {
   }
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    if (!pp) {
-      setMsgPP("");
-      return;
-    }
-    setMsgPP("hidden");
     setMouse("cursor-progress");
+
+    const envioEmail = {
+      nome: data.nome,
+      email: data.email,
+    };
+
     fetch("/api/contato", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Origin: "http://localhost:3000/",
+        Origin: "http://localhost:3001",
       },
       body: JSON.stringify(data),
     })
