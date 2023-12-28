@@ -59,25 +59,25 @@ const services = [
   {
     title: "Produção",
     slug: "producao",
-    desc: "Fazemos qualquer tipo de serviço relacionado à vídeo, imagem, áudio, organização de eventos e outras soluções para o seu negócio.",
+    desc: "Serviços relacionados a vídeo, imagem, áudio, organização de eventos e mais.",
     size: "h-20 w-20",
   },
   {
     title: "Publicidade",
     slug: "publicidade",
-    desc: "Fazemos qualquer tipo de serviço relacionado à comunicação do seu negócio. Trabalhamos com dados e por isso temos uma equipe para fazer pesquisas e planejar as melhores soluções para comunicar de forma eficaz.",
+    desc: "Trabalhamos com dados e temos uma equipe preparada para fazer pesquisas e planejar uma comunicação eficaz para o seu negócio. ",
     size: "h-20 w-20",
   },
   {
     title: "Projetos",
     slug: "projetos",
-    desc: "Além de termos uma equipe pronta para realizar os nossos serviços, também podemos elaborar projetos para que sua própria equipe possa realizar de forma autônoma.",
+    desc: "Elaboramos projetos para que sua própria equipe possa realizar os serviços de forma autônoma. ",
     size: "h-20 w-20",
   },
   {
     title: "Assessoria",
     slug: "assessoria",
-    desc: "Além de todos os serviços prestados, também fornecemos apenas a opção de assessoria, com análises, dicas e treinamentos para qualquer área necessária para melhorar sua empresa.",
+    desc: "Fornecemos apenas a opção de assessoria, com análises, dicas de melhoria e treinamentos para qualquer área da sua empresa.",
     size: "h-24 w-24",
   }
 ];
