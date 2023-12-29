@@ -1,6 +1,7 @@
 import HeroCommon from "@/components/common/servicos/HeroCommon";
 import FeedServices from "@/components/common/FeedFaiz/FeedServices";
 import FeedQuadrado from "@/components/common/FeedFaiz/FeedQuadrado";
+import FeedPortifolio from "@/components/common/FeedFaiz/FeedPortifolio";
 
 export default function Page() {
   return (
@@ -8,6 +9,8 @@ export default function Page() {
         <HeroCommon/>
         <FeedQuadrado/>
         <FeedServices/>
+        <FeedQuadrado/>
+        <FeedPortifolio/>
         <FeedQuadrado/>
     </main>
   );

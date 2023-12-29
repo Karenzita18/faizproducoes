@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
+import { BsArrowRight } from "react-icons/bs";
 
 const FeedAbout = () => {
   const { ref, inView, entry } = useInView();
@@ -44,6 +45,16 @@ const FeedAbout = () => {
                 >
                     Possuímos um estúdio para locação, gravação, transmissão, edição, além de equipamentos e equipe para ir até o local da sua empresa ou evento.
                 </p>
+              </div>
+              <div className="flex place-content-left mt-3">
+                <Link href="https://www.behance.net/faizproducoes" target="_blank">
+                  <button className="font-bold rounded-full outline-none text-white bg-faiz-100 hover:bg-quadrado-100/80 px-5 py-2">
+                    Conheça nosso Portfólio
+                    <span className="inline-block -mb-1 ml-2 text-white">
+                      < BsArrowRight/>
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

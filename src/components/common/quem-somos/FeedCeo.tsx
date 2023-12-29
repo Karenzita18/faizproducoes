@@ -2,6 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
+import {
+  FaInstagram,
+  FaRegEnvelope,
+  FaUser,
+  FaRegUser
+} from "react-icons/fa";
+import {  BsArrowRight } from "react-icons/bs";
 
 const FeedCeo = () => {
   const { ref, inView, entry } = useInView();
@@ -9,7 +16,7 @@ const FeedCeo = () => {
   return (
     <section
       ref={ref}
-      className="bg-faiz-200 relative overflow-hidden"
+      className="bg-faiz-200/50 relative overflow-hidden"
     >
       <div className="row relative">
         <div className="container">
@@ -27,6 +34,29 @@ const FeedCeo = () => {
                   width={600}
                   height={600}
                 />
+              </div>
+              <div className="text-black mt-3">
+                <ul className="flex gap-y-2 flex-col">
+                  <li className="hover:text-brand-50 transition duration-500 font-semibold">
+                      <span className="inline-block -mb-[2px] mr-1">
+                        <FaRegUser/>
+                      </span>
+                      | Eduardo Faiz – CEO e Fundador
+                  </li>
+                  <li className="hover:text-brand-50 transition duration-500 font-semibold">
+                    <a
+                      href="https://www.instagram.com/dufaiz_/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="inline-block -mb-[2px] mr-1">
+                        <FaInstagram/>
+                      </span>
+                      | @dufaiz_
+                    </a>
+                  </li>
+                </ul>
+                
               </div>
             </div>
             <div className="flex flex-col justify-center">
@@ -66,6 +96,16 @@ const FeedCeo = () => {
                     Além de aprender, poder também ensinar sobre essas questões é um privilégio que nos motiva a continuar transformando o planeta através da tecnologia.
                 </p>
               </div>
+              <div className="flex place-content-left mt-2">
+                <Link href="https://www.behance.net/faizproducoes" target="_blank">
+                  <button className="font-bold rounded-full outline-none text-white bg-faiz-100 hover:bg-quadrado-100/80 px-5 py-2">
+                    Conheça nosso Portfólio
+                    <span className="inline-block -mb-1 ml-2 text-white">
+                      < BsArrowRight/>
+                    </span>
+                  </button>
+                </Link>
+            </div>
             </div>
           </div>
         </div>

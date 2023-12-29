@@ -64,7 +64,24 @@ const Page = () => {
                     </div>
                     <div className="flex items-center ml-2">
                       <p className="font-semibold tracking-tight h-fit text-white">
-                        Segunda à Sexta das 8h às 18h
+                        | Atendimento Online: 24 horas
+                      </p>
+                    </div>
+                  </p>
+                  <p className="flex flex-nowrap">
+                    <div className="text-white text-xl">
+                      <FaClock />
+                    </div>
+                    <div className="flex items-center ml-2">
+                      <p className="font-semibold tracking-tight h-fit text-white">
+                        | Atendimento Presencial: Segunda à Sexta das 9h às 17h (faça seu agendamento).
+                      </p>
+                    </div>
+                  </p>
+                  <p className="flex flex-nowrap">
+                    <div className="flex items-center ml-2">
+                      <p className="font-semibold tracking-tight h-fit text-white">
+                        | Eventos e outros serviços podem ser atendidos fora do horário comercial, desde que seja pré-agendado. Consulte disponibilidade.
                       </p>
                     </div>
                   </p>

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
+import { BsArrowRight } from "react-icons/bs";
 
 const FeedAbout = () => {
   const { ref, inView, entry } = useInView();
@@ -20,11 +21,9 @@ const FeedAbout = () => {
                   inView && "animate-fade-right animate-duration-700"
                 }`}
               >
-                <Image
-                  src="/img/quem-somos3.png"
-                  width={400}
-                  height={400}
-                  alt="Produção"
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Publicidade"
                   className="rounded-md shadow-lg"
                 />
               </div>
@@ -51,6 +50,16 @@ const FeedAbout = () => {
                 >
                     Nosso maior diferencial é que já possuímos uma produtora internamente, o que trará mais facilidade, agilidade e economia na hora de produzir qualquer material que seja necessário.
                 </p>
+              </div>
+              <div className="flex place-content-left mt-3">
+                <Link href="https://www.behance.net/faizproducoes" target="_blank">
+                  <button className="font-bold rounded-full outline-none text-white bg-faiz-100 hover:bg-quadrado-100/80 px-5 py-2">
+                    Conheça nosso Portfólio
+                    <span className="inline-block -mb-1 ml-2 text-white">
+                      < BsArrowRight/>
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

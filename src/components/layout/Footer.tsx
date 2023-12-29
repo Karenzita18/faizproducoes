@@ -25,15 +25,19 @@ const Footer = () => {
           <div className="grid grid-cols-4 gap-3">
             <div className="col-span-4 md:col-span-1">
               <div className="max-w-[15rem] ">
-                <Image
-                  src="/img/LOGO_Faiz_branco.webp"
-                  width={150}
-                  height={150}
-                  alt="Logo Footer" 
-                  
-                />
+                <Link
+                  href="/"
+                >
+                  <Image
+                    src="/img/LOGO_Faiz_branco.webp"
+                    width={150}
+                    height={150}
+                    alt="Logo Footer" 
+                    
+                  />
+                </Link>
                 <p className="text-white leading-5 mt-3 text-justify">
-                “Faça o teu melhor, na condição que você tem, enquanto você não tem condições melhores para fazer melhor ainda” Mário Sergio Cortella
+                “Faça o teu melhor, na condição que você tem, enquanto você não tem condições melhores para fazer melhor ainda” <b>Mário Sergio Cortella</b>
                 </p>
               </div>
             </div>
@@ -66,6 +70,14 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="hover:text-brand-50 transition duration-500">
+                    <Link href="/portfolio">
+                      <span className="inline-block -mb-[2px] mr-1">
+                        <FaAngleDoubleRight />
+                      </span>
+                      Portfólio
+                    </Link>
+                  </li>
+                  <li className="hover:text-brand-50 transition duration-500">
                     <Link href="/contato">
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaAngleDoubleRight />
@@ -87,7 +99,7 @@ const Footer = () => {
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaRegEnvelope/>
                       </span>
-                      Atendimento via email
+                      E-mail
                     </a>
                   </li>
                   <li className="hover:text-brand-50 transition duration-500">
@@ -99,7 +111,7 @@ const Footer = () => {
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaWhatsapp/>
                       </span>
-                      Atendimento via Whatsapp
+                      Whatsapp
                     </a>
                   </li>
                 </ul>
@@ -162,7 +174,15 @@ const Footer = () => {
                       <span className="inline-block -mb-[2px] mr-1">
                         <FaClock />
                       </span>
-                      Segunda à Sexta das 8h às 16h
+                      Online | 24 horas
+                    </p>
+                  </li>
+                  <li className="hover:text-brand-50 transition duration-500">
+                    <p className="text-white">
+                      <span className="inline-block -mb-[2px] mr-1">
+                        <FaClock />
+                      </span>
+                      Presencial | Faça seu Agendamento
                     </p>
                   </li>
                 </ul>
@@ -178,15 +198,15 @@ const Footer = () => {
               © {data.getFullYear()} Todos os direitos reservados.
             </p>
           </div>
-          <div className="text-black flex gap-2 text-sm">
-            Desenvolvido por
+          <div className="text-black flex gap-1 text-sm">
+            Desenvolvido por 
             <a
               href="https://www.instagram.com/la_karenzinha/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-50 underline hover:text-faiz-300 transition duration-500"
             >
-              Karen Souza
+             Karen Souza
             </a>
           </div>{" "}
         </div>
